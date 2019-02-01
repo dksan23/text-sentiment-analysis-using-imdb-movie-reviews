@@ -33,7 +33,7 @@ def dataloader(datadir):
     data["train"]=pd.DataFrame(data["train"],columns=["text","sentiment"])
     data["test"]=pd.DataFrame(data["test"],columns=["text","sentiment"])
     return data["train"],data["test"]
-trainset,testset=dataloader(r'C:\Users\HeavyD\Desktop\nlp\aclImdb_v1\aclImdb')
+trainset,testset=dataloader(path to data set folder)
 from sklearn.svm import LinearSVC
 from sklearn.metrics import accuracy_score
 from sklearn.feature_extraction.text import TfidfVectorizer
